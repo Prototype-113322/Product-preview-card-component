@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Mobile Final*/
+
+@media(max-width:600px){
+    
+    body{
+        background-color: #f3eae3;
+    }
+
+    .grid-for-desktop-device{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem;
+        background-color: white;
+    }
+
+    .perfume-image{
+        width: 100%;
+        background-size: cover;
+        border-radius: 0.6rem 0.5rem 0rem 0rem;
+    }
+
+    .content{
+        padding: 1.3rem;
+    }
+
+    .perfume{
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        opacity: 60%;
+        padding: 0.5rem 0;
+    }
+
+    .perfume-name{
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .perfume-details{
+        line-height: 1.4rem;
+        padding-bottom: 1.3rem;
+        color: #777975;
+    }
+
+    .price-container{
+        display: flex;
+        flex-grow: 0;
+       flex-shrink: 0;
+        gap: 0.5rem;
+    }
+
+    .price-tag{
+        font-size: 2.2rem;
+        color: #4c947a;
+    }
+
+    .strike-through-price{
+        color: #777975;
+       text-decoration:line-through;
+       padding-top: 0.5rem;
+       padding-left: 1rem;
+       
+    }
+
+    .btn{
+        min-width: 100%;
+        border: none;
+        color: white;
+        font-weight: 600;
+        background-color: #4c947a;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        margin-top: 0.6rem;
+    }
+
+    .btn img{
+        padding-right: 0.5rem;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+}
+
+/* DESKTOP AND LAPTOP SCREEN */
+
+@media (min-width:601px) {
+    body{
+        background-color: #f3eae3;
+        
+    }
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+
+    .for-mobile-device{
+        display: none;
+    }
+
+    .inner-container{
+        height:31.25rem;
+        width: 43.75rem;  /**/
+        padding: 1.875rem;
+    }
+
+    .grid-for-desktop-device{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        grid-area: 1 / 1 / 6 / 3;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .content{
+        grid-area: 1 / 3 / 6 / 6;
+        padding: 1.5rem;
+        background-color: white;
+        width: 20rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+        
+    }
+
+    .perfume{
+        font-family: "Roboto", sans-serif;
+        font-size: 1rem;
+        opacity: 60%;
+        padding: 0.5rem 0;
+    }
+
+    .perfume-name{
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+        padding-bottom: 1rem;
+        width: 15rem;
+    }
+
+    .perfume-details{
+        line-height: 1.4rem;
+        padding-bottom: 1.3rem;
+        padding-top: 0.5rem;
+        color: #777975;
+        width: 15rem;
+    }
+
+    .perfume-details{
+        line-height: 1.4rem;
+        padding-bottom: 1.3rem;
+        color: #777975;
+    }
+
+    .price-container{
+        display: flex;
+        flex-grow: 0;
+       flex-shrink: 0;
+        gap: 0.5rem;
+    }
+
+    .price-tag{
+        font-size: 2.2rem;
+        color: #4c947a;
+    }
+
+    .strike-through-price{
+        color: #777975;
+       text-decoration:line-through;
+       padding-top: 0.5rem;
+       padding-left: 1rem;
+       
+    }
+
+    .btn{
+        width: 100%;
+        height: 2.5rem;
+        border: none;
+        color: white;
+        font-weight: 600;
+        background-color: #4c947a;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        margin-top: 0.6rem;
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .shopping-cart-img{
+        height: 1rem;
+        width: 1rem;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    
+}
